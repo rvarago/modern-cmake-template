@@ -10,3 +10,8 @@ target_include_directories(lib1
 	PRIVATE
 		src
 )
+
+target_compile_features(lib1
+	PRIVATE
+            cxx_std_11
+)
