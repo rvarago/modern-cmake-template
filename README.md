@@ -1,2 +1,3 @@
 # modern-cmake-appAndLib
-Example of How to Use CMake for Building a Project composed by App and Lib
+
+Example of how to use CMake for building a project composed by an application, library, and tests.
