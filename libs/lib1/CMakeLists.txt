@@ -17,3 +17,5 @@ target_compile_features(lib1
 	PRIVATE
             cxx_std_11
 )
+
+add_subdirectory(tests)
