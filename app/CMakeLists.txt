@@ -4,4 +4,4 @@ add_executable(app
 	src/main.cpp
 )
 
-target_link_libraries(app PRIVATE lib1)
+target_link_libraries(app PRIVATE libs::lib1)
