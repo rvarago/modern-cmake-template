@@ -6,7 +6,7 @@ run: compile
 	cd build && ./app/app
 
 test: compile
-	cd build && ./libs/lib1/tests/lib1_tests
+	cd build && ctest .
 
 compile: gen
 	cd build && cmake --build .

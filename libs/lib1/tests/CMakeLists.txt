@@ -9,3 +9,4 @@ target_link_libraries(lib1_tests
             libs::lib1
 )
 
+add_test(lib1_tests lib1_tests)
