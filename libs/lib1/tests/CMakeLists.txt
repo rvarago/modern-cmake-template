@@ -1,12 +1,12 @@
 project(lib1_tests)
 
-add_executable(lib1_tests
-        main.cpp
+add_executable(${PROJECT_NAME}
+    main.cpp
 )
 
-target_link_libraries(lib1_tests
-        PRIVATE
-            libs::lib1
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        libs::lib1
 )
 
-add_test(lib1_tests lib1_tests)
+add_test(lib1_tests ${PROJECT_NAME})
