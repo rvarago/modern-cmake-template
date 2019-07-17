@@ -1,6 +1,6 @@
 .PHONY: all test clean-compile compile gen mk clean
 
-all: compile
+all: test run
 
 run: compile
 	cd build && ./app/app
