@@ -1,7 +1,10 @@
-project(modern-cmake-app)
+project(app)
 
-add_executable(app
+add_executable(${PROJECT_NAME}
 	main.cpp
 )
 
-target_link_libraries(app PRIVATE libs::lib1)
+target_link_libraries(${PROJECT_NAME}
+	PRIVATE
+		libs::lib1
+)
