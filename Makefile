@@ -1,4 +1,4 @@
-.PHONY: all test compile gen mk clean
+.PHONY: all test clean-compile compile gen mk clean
 
 all: compile
 
@@ -7,6 +7,8 @@ run: compile
 
 test: compile
 	cd build && ctest .
+
+clean-compile: clean compile
 
 compile: gen
 	cd build && cmake --build .
