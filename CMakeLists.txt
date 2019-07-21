@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(modern-cmake-libAndApp-ex)
+project(modern-cmake-template)
 
 enable_testing()
 
