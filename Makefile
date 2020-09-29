@@ -1,6 +1,6 @@
-.PHONY: all test clean-compile compile gen mk clean
+.PHONY: all test clean compile gen mkbuild clean
 
-all: test run
+all: compile
 
 run: compile
 	cd build && ./app/app
@@ -8,15 +8,13 @@ run: compile
 test: compile
 	cd build && ctest .
 
-clean-compile: clean compile
-
 compile: gen
-	cd build && cmake --build .
+	cd build && cmake --build . --target all
 
-gen: mk
+gen: mkbuild
 	cd build && cmake ..
 
-mk:
+mkbuild:
 	mkdir -p build
 
 clean:
