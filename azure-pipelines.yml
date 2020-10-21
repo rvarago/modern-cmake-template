@@ -1,0 +1,19 @@
+strategy:
+  matrix:
+    linux:
+      imageName: 'ubuntu-18.04'
+    windows:
+      imageName: 'windows-2019'
+
+pool:
+  vmImage: $(imageName)
+
+steps:
+
+  - script: |
+      cmake -B build && cmake --build build
+    displayName: 'Build'
+
+  - script: |
+      cmake -E chdir build ctest
+    displayName: 'Test'
