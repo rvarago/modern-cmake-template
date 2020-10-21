@@ -2,6 +2,7 @@ project(lib1)
 
 add_library(${PROJECT_NAME}
 	lib1-priv-impl.cpp
+	lib1-pub-impl.cpp
 )
 
 add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
