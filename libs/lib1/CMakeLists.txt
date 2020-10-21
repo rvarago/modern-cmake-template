@@ -2,6 +2,7 @@ project(lib1)
 
 add_library(${PROJECT_NAME}
 	lib1-priv-impl.cpp
+	lib1-pub-impl.cpp
 )
 
 add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
@@ -19,4 +20,6 @@ target_compile_features(${PROJECT_NAME}
 		cxx_std_11
 )
 
-add_subdirectory(tests)
+if(BUILD_TESTING)
+	add_subdirectory(tests)
+endif()

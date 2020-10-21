@@ -1,3 +1,8 @@
-#pragma once
+#ifndef LIB1_PRIV_HEADER
+#define LIB1_PRIV_HEADER
 
-int sum_aux(const int first, const int second);
+namespace lib1 {
+auto sum_aux(int first, int second) -> int;
+}
+
+#endif
