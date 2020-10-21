@@ -20,4 +20,6 @@ target_compile_features(${PROJECT_NAME}
 		cxx_std_11
 )
 
-add_subdirectory(tests)
+if(BUILD_TESTING)
+	add_subdirectory(tests)
+endif()
